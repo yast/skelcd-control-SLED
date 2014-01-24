@@ -34,9 +34,14 @@ Group:          Metapackages
 BuildRequires:  libxml2-tools
 # new global option - FATE #305583
 BuildRequires:  yast2-installation-control
+
+# SLED specific Yast packages needed in the inst-sys
+# to provide the functionality needed by this control file
+Requires:       yast2-registration
+
 Url:            https://github.com/yast/skelcd-control-SLED
 AutoReqProv:    off
-Version:        12.0.2
+Version:        12.0.3
 Release:        0
 BuildRoot:      %{_tmppath}/%{name}-%{version}-build
 Source:         %{name}-%{version}.tar.bz2
