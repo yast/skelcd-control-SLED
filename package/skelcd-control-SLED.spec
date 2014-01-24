@@ -36,7 +36,7 @@ BuildRequires:  libxml2-tools
 BuildRequires:  yast2-installation-control
 Url:            https://github.com/yast/skelcd-control-SLED
 AutoReqProv:    off
-Version:        12.0.1
+Version:        12.0.2
 Release:        0
 BuildRoot:      %{_tmppath}/%{name}-%{version}-build
 Source:         %{name}-%{version}.tar.bz2
