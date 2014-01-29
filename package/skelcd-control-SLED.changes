@@ -2,6 +2,7 @@
 Wed Jan 29 11:47:48 UTC 2014 - lslezak@suse.cz
 
 - install LICENSE (to pass the build service check)
+- added some missing Yast dependencies
 
 -------------------------------------------------------------------
 Fri Jan 24 17:44:48 UTC 2014 - lslezak@suse.cz
