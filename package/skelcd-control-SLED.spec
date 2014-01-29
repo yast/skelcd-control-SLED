@@ -67,9 +67,6 @@ Requires:       yast2-tune
 Requires:       yast2-update
 Requires:       yast2-users
 Requires:       yast2-x11
-# this is the default theme
-Requires:       yast2-theme-openSUSE-Oxygen
-Requires:       yast2-qt-branding-openSUSE
 
 # Architecture specific packages
 #
@@ -86,7 +83,7 @@ BuildRequires:  yast2-vm
 
 Url:            https://github.com/yast/skelcd-control-SLED
 AutoReqProv:    off
-Version:        12.0.4
+Version:        12.0.5
 Release:        0
 BuildRoot:      %{_tmppath}/%{name}-%{version}-build
 Source:         %{name}-%{version}.tar.bz2
