@@ -108,8 +108,14 @@ make -C control check
 mkdir -p $RPM_BUILD_ROOT/CD1
 install -m 644 control/control.SLED.xml $RPM_BUILD_ROOT/CD1/control.xml
 
+# install LICENSE (required by build service check)
+mkdir -p $RPM_BUILD_ROOT/%{_prefix}/share/doc/packages/%{name}
+install -m 644 LICENSE $RPM_BUILD_ROOT/%{_prefix}/share/doc/packages/%{name}
+
 %files
 %defattr(644,root,root,755)
 /CD1
+%doc %dir %{_prefix}/share/doc/packages/%{name}
+%doc %{_prefix}/share/doc/packages/%{name}/LICENSE
 
 %changelog
