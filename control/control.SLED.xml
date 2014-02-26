@@ -833,9 +833,6 @@ Please visit us at http://www.suse.com/.
                     <name>restore_settings</name>
                 </module>
                 <module>
-                    <name>suseconfig</name>
-                </module>
-                <module>
                     <label>Release Notes</label>
                     <name>release_notes</name>
                     <enable_back>yes</enable_back>
@@ -1022,9 +1019,6 @@ Please visit us at http://www.suse.com/.
                     <label>System Configuration</label>
                     <name>autoconfigure</name>
                 </module>
-                <module>
-                    <name>suseconfig</name>
-                </module>
             </modules>
         </workflow>
 
@@ -1053,10 +1047,6 @@ Please visit us at http://www.suse.com/.
                 <module>
                     <label>System Configuration</label>
                     <name>autoconfigure</name>
-                </module>
-                <module>
-                    <label>Clean Up</label>
-                    <name>suseconfig</name>
                 </module>
             </modules>
         </workflow>
