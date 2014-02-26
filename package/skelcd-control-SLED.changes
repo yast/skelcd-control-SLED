@@ -2,7 +2,7 @@
 Thu Feb 20 13:37:03 UTC 2014 - jreidinger@suse.com
 
 - remove suseconfig script from autoyast work-flow as it no longer
-  exists
+  exists (BNC#864860)
 - 12.0.7
 
 -------------------------------------------------------------------
