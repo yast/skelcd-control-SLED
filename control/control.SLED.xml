@@ -468,6 +468,10 @@ Please visit us at http://www.suse.com/.
             <stage>initial</stage>
             <modules config:type="list">
                 <module>
+                    <label>Load linuxrc Network Configuration</label>
+                    <name>install_inf</name>
+                </module>
+                <module>
                     <label>Network Autosetup</label>
                     <name>setup_dhcp</name>
                 </module>
@@ -591,6 +595,10 @@ Please visit us at http://www.suse.com/.
             <mode>live_installation</mode>
             <stage>initial</stage>
             <modules config:type="list">
+                <module>
+                    <label>Load linuxrc Network Configuration</label>
+                    <name>install_inf</name>
+                </module>
                 <module>
                     <label>Network Autosetup</label>
                     <name>setup_dhcp</name>
