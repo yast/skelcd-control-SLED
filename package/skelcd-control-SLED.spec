@@ -55,7 +55,7 @@ Requires:       yast2-fcoe-client
 Requires:       yast2-iscsi-client
 Requires:       yast2-kdump
 Requires:       yast2-multipath
-Requires:       yast2-network
+Requires:       yast2-network >= 3.1.24
 Requires:       yast2-nfs-client
 Requires:       yast2-ntp-client
 Requires:       yast2-proxy
@@ -82,7 +82,7 @@ Requires:  yast2-vm
 
 Url:            https://github.com/yast/skelcd-control-SLED
 AutoReqProv:    off
-Version:        12.0.7
+Version:        12.0.8
 Release:        0
 BuildRoot:      %{_tmppath}/%{name}-%{version}-build
 Source:         %{name}-%{version}.tar.bz2
