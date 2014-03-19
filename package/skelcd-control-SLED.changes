@@ -1,4 +1,10 @@
 -------------------------------------------------------------------
+Tue Mar 18 18:14:09 CET 2014 - aschnell@suse.de
+
+- set btrfs_increase_percentage to 300 (bnc#868246)
+- 12.0.9
+
+-------------------------------------------------------------------
 Thu Feb 27 07:11:32 UTC 2014 - mfilka@suse.com
 
 - added reference to linuxrc network configuration client
