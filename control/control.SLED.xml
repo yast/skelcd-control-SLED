@@ -96,6 +96,9 @@ textdomain="control"
         <!-- bnc #431259 -->
         <default_ntp_setup config:type="boolean">false</default_ntp_setup>
 
+        <!-- to debug deploying, set to 'true' -->
+        <debug_deploying config:type="boolean">false</debug_deploying>
+
         <!-- Used in services proposal -->
         <services_proposal config:type="list">
             <!-- FATE #305583: Start CIMOM by default -->
@@ -556,6 +559,11 @@ Please visit us at http://www.suse.com/.
                     <label>Perform Installation</label>
                     <name>prepdisk</name>
                 </module>
+                <!-- Installation from images -->
+                <module>
+                    <label>Perform Installation</label>
+                    <name>deploy_image</name>
+                </module>
                 <module>
                     <label>Perform Installation</label>
                     <name>kickoff</name>
@@ -888,6 +896,10 @@ Please visit us at http://www.suse.com/.
                 <module>
                     <label>Perform Installation</label>
                     <name>prepdisk</name>
+                </module>
+                <module>
+                <label>Perform Installation</label>
+                    <name>deploy_image</name>
                 </module>
                 <module>
                     <label>Perform Installation</label>
