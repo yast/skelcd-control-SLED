@@ -550,6 +550,10 @@ Please visit us at http://www.suse.com/.
                     <execute>inst_proposal</execute>
                     <proposal>initial</proposal>
                 </module>
+                <module>
+                    <label>Perform Installation</label>
+                    <name>prepare_image</name>
+                </module>
                 <!-- FATE #303860: Provide consistent progress during installation -->
                 <module>
                     <label>Perform Installation</label>
