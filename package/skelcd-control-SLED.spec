@@ -47,7 +47,7 @@ Requires:       yast2-registration
 Requires:       yast2-theme-SLE
 
 # Generic Yast packages needed for the installer
-Requires:       autoyast2-installation
+Requires:       autoyast2
 Requires:       yast2-add-on
 Requires:       yast2-buildtools
 Requires:       yast2-devtools
@@ -82,7 +82,7 @@ Requires:  yast2-vm
 
 Url:            https://github.com/yast/skelcd-control-SLED
 AutoReqProv:    off
-Version:        12.0.12
+Version:        12.0.13
 Release:        0
 BuildRoot:      %{_tmppath}/%{name}-%{version}-build
 Source:         %{name}-%{version}.tar.bz2
