@@ -142,7 +142,7 @@ textdomain="control"
         <supported_desktops config:type="list">
             <one_supported_desktop>
                 <name>desktop_gnome</name>
-                <desktop>gnome-classic</desktop>
+                <desktop>sle-classic</desktop>
                 <label_id>desktop_gnome</label_id>
                 <logon>gdm</logon>
                 <cursor>DMZ</cursor>
