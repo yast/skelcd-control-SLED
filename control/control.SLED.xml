@@ -116,16 +116,16 @@ textdomain="control"
     <software>
         <!-- By default, unmaintained (old) packages are removed -->
         <delete_old_packages config:type="boolean">true</delete_old_packages>
-        <!-- For SLED11, unmaintained (old) packages are not removed by default, FATE #301844, bugzilla #233156 -->
+        <!-- For SLED12, unmaintained (old) packages are not removed by default, FATE #301844, bugzilla #233156 -->
         <delete_old_packages_reverse_list config:type="list">
-            <regexp_item>^SUSE (LINUX|Linux) Enterprise Desktop 11.*$</regexp_item>
+            <regexp_item>^SUSE (LINUX|Linux) Enterprise Desktop 12.*$</regexp_item>
         </delete_old_packages_reverse_list>
 
         <!-- By default, packages can be downgraded -->
         <silently_downgrade_packages config:type="boolean">true</silently_downgrade_packages>
-        <!-- For SLED11, packages are not downgraded, FATE #301990, bugzilla #238488 -->
+        <!-- For SLED12, packages are not downgraded, FATE #301990, bugzilla #238488 -->
         <silently_downgrade_packages_reverse_list config:type="list">
-            <regexp_item>^SUSE (LINUX|Linux) Enterprise Desktop 11.*$</regexp_item>
+            <regexp_item>^SUSE (LINUX|Linux) Enterprise Desktop 12.*$</regexp_item>
         </silently_downgrade_packages_reverse_list>
 
         <!-- By default, select new packages for installation -->
