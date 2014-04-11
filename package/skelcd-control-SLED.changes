@@ -1,4 +1,10 @@
 -------------------------------------------------------------------
+Fri Apr 11 10:46:08 CEST 2014 - fcrozat@suse.com
+
+- Switch network configuration to auto (bnc#872336)
+- 12.0.22
+
+-------------------------------------------------------------------
 Thu Apr 10 15:32:04 CEST 2014 - locilka@suse.com
 
 - Installation media removed from update proposal (bnc#869657)
