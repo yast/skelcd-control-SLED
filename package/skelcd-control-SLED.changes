@@ -1,4 +1,11 @@
 -------------------------------------------------------------------
+Wed Apr 16 11:15:59 CEST 2014 - locilka@suse.com
+
+- Product patterns moved from content file to control file
+  (bnc#873849)
+- 12.0.23
+
+-------------------------------------------------------------------
 Fri Apr 11 10:46:08 CEST 2014 - fcrozat@suse.com
 
 - Switch network configuration to auto (bnc#872336)
