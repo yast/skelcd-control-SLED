@@ -32,8 +32,8 @@ Summary:        SLED control file needed for installation
 License:        MIT
 Group:          Metapackages
 BuildRequires:  libxml2-tools
-# new global option - FATE #305583
-BuildRequires:  yast2-installation-control
+# Added software->default_patterns
+BuildRequires:  yast2-installation-control >= 3.1.6
 
 ######################################################################
 #
@@ -82,7 +82,7 @@ Requires:  yast2-vm
 
 Url:            https://github.com/yast/skelcd-control-SLED
 AutoReqProv:    off
-Version:        12.0.23
+Version:        12.0.24
 Release:        0
 BuildRoot:      %{_tmppath}/%{name}-%{version}-build
 Source:         %{name}-%{version}.tar.bz2
