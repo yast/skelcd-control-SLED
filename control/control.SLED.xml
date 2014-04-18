@@ -138,6 +138,9 @@ textdomain="control"
         <selection_type config:type="symbol">auto</selection_type>
         <base_selection>default-Gnome</base_selection>
 
+        <!-- bnc#873923, bnc#873849: Default product patterns moved here from /content file -->
+        <default_patterns>desktop-base x11 desktop-gnome apparmor 32bit documentation</default_patterns>
+
         <!-- BNC #436094: default desktop, DISPLAYMANAGER, ... -->
         <supported_desktops config:type="list">
             <one_supported_desktop>
@@ -149,8 +152,8 @@ textdomain="control"
                 <!-- package has to be installed or selected -->
                 <packages>gdm gnome-shell-classic</packages>
                 <order config:type="integer">1</order>
-                <!-- bnc#873849: Patterns moved here from /content file (obsoleted there) -->
-                <patterns>desktop-base x11 desktop-gnome apparmor 32bit documentation</patterns>
+                <!-- Intentionally no patterns here, they are selected by default_patterns -->
+                <patterns/>
                 <icon>pattern-gnome</icon>
             </one_supported_desktop>
 

@@ -1,4 +1,11 @@
 -------------------------------------------------------------------
+Fri Apr 18 13:49:10 CEST 2014 - locilka@suse.com
+
+- Default product patterns moved to new software->default_patterns
+  (bnc#873923)
+- 12.0.24
+
+-------------------------------------------------------------------
 Wed Apr 16 11:15:59 CEST 2014 - locilka@suse.com
 
 - Product patterns moved from content file to control file
