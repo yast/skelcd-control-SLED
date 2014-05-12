@@ -1,4 +1,10 @@
 -------------------------------------------------------------------
+Fri May  9 11:31:13 UTC 2014 - jsrain@suse.cz
+
+- download release notes for add-ons (bnc#876700)
+- 12.0.25
+
+-------------------------------------------------------------------
 Fri Apr 18 13:49:10 CEST 2014 - locilka@suse.com
 
 - Default product patterns moved to new software->default_patterns
