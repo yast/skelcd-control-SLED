@@ -1,4 +1,11 @@
 -------------------------------------------------------------------
+Thu May 15 11:23:21 CEST 2014 - locilka@suse.com
+
+- Added handling for upgrading default desktop using
+  software->upgrade->window_managers (bnc#874116)
+- 12.0.26
+
+-------------------------------------------------------------------
 Fri May  9 11:31:13 UTC 2014 - jsrain@suse.cz
 
 - download release notes for add-ons (bnc#876700)
