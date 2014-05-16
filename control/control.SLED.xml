@@ -139,7 +139,7 @@ textdomain="control"
         <base_selection>default-Gnome</base_selection>
 
         <!-- bnc#873923, bnc#873849: Default product patterns moved here from /content file -->
-        <default_patterns>desktop-base x11 desktop-gnome apparmor 32bit documentation</default_patterns>
+        <default_patterns>Minimal desktop-base x11 desktop-gnome apparmor 32bit documentation</default_patterns>
 
         <!-- BNC #436094: default desktop, DISPLAYMANAGER, ... -->
         <supported_desktops config:type="list">

@@ -1,4 +1,11 @@
 -------------------------------------------------------------------
+Fri May 16 14:44:46 CEST 2014 - fcrozat@suse.com
+
+- Also explicitly select pattern 'minimal' for
+  installation (bnc#875350)
+- 12.0.27
+
+-------------------------------------------------------------------
 Thu May 15 11:23:21 CEST 2014 - locilka@suse.com
 
 - Added handling for upgrading default desktop using
