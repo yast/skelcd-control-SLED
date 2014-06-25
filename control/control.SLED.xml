@@ -273,6 +273,10 @@ Please visit us at http://www.suse.com/.
 
             <proposal_modules config:type="list">
                 <proposal_module>
+                    <name>clone</name>
+                    <presentation_order>95</presentation_order>
+                </proposal_module>
+                <proposal_module>
                     <name>hwinfo</name>
                     <presentation_order>90</presentation_order>
                 </proposal_module>
@@ -306,6 +310,10 @@ Please visit us at http://www.suse.com/.
             <unique_id>autoinst_initial</unique_id>
 
             <proposal_modules config:type="list">
+                <proposal_module>
+                    <name>clone</name>
+                    <presentation_order>95</presentation_order>
+                </proposal_module>
                 <proposal_module>
                     <name>hwinfo</name>
                     <presentation_order>90</presentation_order>
@@ -357,6 +365,7 @@ Please visit us at http://www.suse.com/.
                         <proposal_module>software</proposal_module>
                         <proposal_module>language_simple</proposal_module>
                         <proposal_module>firewall_stage1</proposal_module>
+                        <proposal_module>clone</proposal_module>
                     </proposal_modules>
                 </proposal_tab>
                 <proposal_tab>
@@ -388,6 +397,7 @@ Please visit us at http://www.suse.com/.
                 <proposal_module>default_target</proposal_module>
                 <proposal_module>hwinfo</proposal_module>
                 <proposal_module>users</proposal_module>
+                <proposal_module>clone</proposal_module>
             </proposal_modules>
         </proposal>
         <proposal>
