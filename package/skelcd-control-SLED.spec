@@ -52,6 +52,8 @@ Requires:       yast2-add-on
 Requires:       yast2-buildtools
 Requires:       yast2-devtools
 Requires:       yast2-fcoe-client
+# For creating the AutoYast profile at the end of installation (bnc#887406)
+Requires:       yast2-firewall
 Requires:       yast2-iscsi-client
 Requires:       yast2-kdump
 Requires:       yast2-multipath
@@ -82,7 +84,7 @@ Requires:  yast2-vm
 
 Url:            https://github.com/yast/skelcd-control-SLED
 AutoReqProv:    off
-Version:        12.0.31
+Version:        12.0.32
 Release:        0
 BuildRoot:      %{_tmppath}/%{name}-%{version}-build
 Source:         %{name}-%{version}.tar.bz2
