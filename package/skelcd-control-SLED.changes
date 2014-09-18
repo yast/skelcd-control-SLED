@@ -1,4 +1,11 @@
 -------------------------------------------------------------------
+Thu Sep 18 13:17:05 CEST 2014 - locilka@suse.com
+
+- removed firewall_stage1 from AutoYast confirmation (proposal)
+  screen (bnc#894130)
+- 12.0.34
+
+-------------------------------------------------------------------
 Thu Aug 21 09:14:41 UTC 2014 - lslezak@suse.cz
 
 - clone registration settings to autoinst.xml (bnc#892449)
