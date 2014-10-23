@@ -1,6 +1,9 @@
 skelcd-control-SLED
 ===================
 
+[![Travis Build](https://travis-ci.org/yast/skelcd-control-SLED.svg?branch=master)](https://travis-ci.org/yast/skelcd-control-SLED)
+
+
 Installation control file for SUSE Linux Enterprise Desktop product
 
 See also the [documentation for the `control.xml` file][1].
