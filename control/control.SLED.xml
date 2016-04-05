@@ -530,6 +530,12 @@ Please visit us at http://www.suse.com/.
                     <enable_next>yes</enable_next>
                 </module>
                 <module>
+                    <label>Installer Update</label>
+                    <name>update_installer</name>
+                    <enable_back>yes</enable_back>
+                    <enable_next>yes</enable_next>
+                </module>
+                <module>
                     <name>scc</name>
                     <enable_back>yes</enable_back>
                     <enable_next>yes</enable_next>
@@ -763,6 +769,12 @@ Please visit us at http://www.suse.com/.
                     <enable_next>yes</enable_next>
                 </module>
                 <module>
+                    <label>Installer Update</label>
+                    <name>update_installer</name>
+                    <enable_back>yes</enable_back>
+                    <enable_next>yes</enable_next>
+                </module>
+                <module>
                     <label>System for Update</label>
                     <name>update_partition</name>
                     <enable_back>yes</enable_back>
@@ -839,6 +851,12 @@ Please visit us at http://www.suse.com/.
                     <retranslate config:type="boolean">true</retranslate>
                 </module>
                 <module>
+                    <label>Installer Update</label>
+                    <name>update_installer</name>
+                    <enable_back>yes</enable_back>
+                    <enable_next>yes</enable_next>
+                </module>
+                <module>
                     <label>AutoYaST Settings</label>
                     <name>autosetup</name>
                 </module>
@@ -893,6 +911,12 @@ Please visit us at http://www.suse.com/.
                 <module>
                     <label>System Analysis</label>
                     <name>system_analysis</name>
+                    <enable_back>yes</enable_back>
+                    <enable_next>yes</enable_next>
+                </module>
+                <module>
+                    <label>Installer Update</label>
+                    <name>update_installer</name>
                     <enable_back>yes</enable_back>
                     <enable_next>yes</enable_next>
                 </module>
