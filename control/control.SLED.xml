@@ -265,6 +265,11 @@ Please visit us at http://www.suse.com/.
                     <name>default_target</name>
                     <presentation_order>55</presentation_order>
                 </proposal_module>
+                <!-- Fate #319624 - proposal and dialog for existing SSH host keys -->
+                <proposal_module>
+                    <name>ssh_import</name>
+                    <presentation_order>65</presentation_order>
+                </proposal_module>
             </proposal_modules>
         </proposal>
 
@@ -317,6 +322,11 @@ Please visit us at http://www.suse.com/.
                 <proposal_module>
                     <name>default_target</name>
                     <presentation_order>55</presentation_order>
+                </proposal_module>
+                <!-- Fate #319624 - proposal and dialog for existing SSH host keys -->
+                <proposal_module>
+                    <name>ssh_import</name>
+                    <presentation_order>65</presentation_order>
                 </proposal_module>
             </proposal_modules>
 
