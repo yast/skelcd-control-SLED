@@ -480,6 +480,11 @@ Please visit us at http://www.suse.com/.
                     <label>Network Autosetup</label>
                     <name>setup_dhcp</name>
                 </module>
+                <!-- As soon as possible but after network is initialized -->
+                <module>
+                    <label>Installer Update</label>
+                    <name>update_installer</name>
+                </module>
                 <module>
                     <name>complex_welcome</name>
                     <label>Welcome</label>
@@ -505,13 +510,6 @@ Please visit us at http://www.suse.com/.
                 <module>
                     <label>System Analysis</label>
                     <name>system_analysis</name>
-                    <enable_back>yes</enable_back>
-                    <enable_next>yes</enable_next>
-                </module>
-                <!-- As soon as possible but after packager is initialized -->
-                <module>
-                    <label>Installer Update</label>
-                    <name>update_installer</name>
                     <enable_back>yes</enable_back>
                     <enable_next>yes</enable_next>
                 </module>
@@ -728,6 +726,11 @@ Please visit us at http://www.suse.com/.
                     <label>Network Autosetup</label>
                     <name>setup_dhcp</name>
                 </module>
+                <!-- As soon as possible but after network is initialized -->
+                <module>
+                    <label>Installer Update</label>
+                    <name>update_installer</name>
+                </module>
                 <module>
                     <name>complex_welcome</name>
                     <label>Welcome</label>
@@ -753,13 +756,6 @@ Please visit us at http://www.suse.com/.
                 <module>
                     <label>System Analysis</label>
                     <name>system_analysis</name>
-                    <enable_back>yes</enable_back>
-                    <enable_next>yes</enable_next>
-                </module>
-                <!-- As soon as possible but after packager is initialized -->
-                <module>
-                    <label>Installer Update</label>
-                    <name>update_installer</name>
                     <enable_back>yes</enable_back>
                     <enable_next>yes</enable_next>
                 </module>
@@ -841,18 +837,18 @@ Please visit us at http://www.suse.com/.
                 <enable_next>no</enable_next>
             </defaults>
             <modules config:type="list">
+                <!-- As soon as possible -->
+                <module>
+                    <label>Installer Update</label>
+                    <name>update_installer</name>
+                    <enable_back>no</enable_back>
+                    <enable_next>yes</enable_next>
+                </module>
                 <module>
                     <label>AutoYaST Settings</label>
                     <name>autoinit</name>
                     <archs>all</archs>
                     <retranslate config:type="boolean">true</retranslate>
-                </module>
-                <!-- As soon as possible but after packager is initialized -->
-                <module>
-                    <label>Installer Update</label>
-                    <name>update_installer</name>
-                    <enable_back>yes</enable_back>
-                    <enable_next>yes</enable_next>
                 </module>
                 <module>
                     <label>AutoYaST Settings</label>
@@ -914,6 +910,13 @@ Please visit us at http://www.suse.com/.
             <mode>autoupgrade</mode>
             <stage>initial</stage>
             <modules config:type="list">
+                <!-- As soon as possible -->
+                <module>
+                    <label>Installer Update</label>
+                    <name>update_installer</name>
+                    <enable_back>no</enable_back>
+                    <enable_next>yes</enable_next>
+                </module>
                 <module>
                     <label>System Analysis</label>
                     <name>system_analysis</name>
@@ -931,13 +934,6 @@ Please visit us at http://www.suse.com/.
                     <name>autoinit</name>
                     <archs>all</archs>
                     <retranslate config:type="boolean">true</retranslate>
-                </module>
-                <!-- As soon as possible but after packager is initialized -->
-                <module>
-                    <label>Installer Update</label>
-                    <name>update_installer</name>
-                    <enable_back>yes</enable_back>
-                    <enable_next>yes</enable_next>
                 </module>
                 <module>
                     <label>AutoYaST Settings</label>
