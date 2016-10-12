@@ -32,8 +32,8 @@ Summary:        SLED control file needed for installation
 License:        MIT
 Group:          Metapackages
 BuildRequires:  libxml2-tools
-# new global option - FATE #305583
-BuildRequires:  yast2-installation-control
+# Added software->default_patterns
+BuildRequires:  yast2-installation-control >= 3.1.7
 
 ######################################################################
 #
@@ -47,11 +47,15 @@ Requires:       yast2-registration
 Requires:       yast2-theme-SLE
 
 # Generic Yast packages needed for the installer
-Requires:       autoyast2-installation
+Requires:       autoyast2
 Requires:       yast2-add-on
 Requires:       yast2-buildtools
 Requires:       yast2-devtools
 Requires:       yast2-fcoe-client
+# For creating the AutoYast profile at the end of installation (bnc#887406)
+Requires:       yast2-firewall
+# instsys_cleanup
+Requires:       yast2-installation >= 3.1.201
 Requires:       yast2-iscsi-client
 Requires:       yast2-kdump
 Requires:       yast2-multipath
@@ -66,6 +70,8 @@ Requires:       yast2-tune
 Requires:       yast2-update
 Requires:       yast2-users
 Requires:       yast2-x11
+# Ruby debugger in the inst-sys (FATE#318421)
+Requires:       rubygem(%{rb_default_ruby_abi}:byebug)
 
 # Architecture specific packages
 #
@@ -82,7 +88,7 @@ Requires:  yast2-vm
 
 Url:            https://github.com/yast/skelcd-control-SLED
 AutoReqProv:    off
-Version:        12.1.0
+Version:        12.3.0
 Release:        0
 BuildRoot:      %{_tmppath}/%{name}-%{version}-build
 Source:         %{name}-%{version}.tar.bz2

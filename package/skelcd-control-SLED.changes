@@ -4,7 +4,238 @@ Wed Oct 12 11:30:03 UTC 2016 - mfilka@suse.com
 - Removed reference to netprobe client. It was used in AutoYaST
   only and everything what this client does should be currently
   handled by wicked.
-- 12.1.0
+- 12.3.0
+-------------------------------------------------------------------
+Fri Aug 26 12:14:17 UTC 2016 - lslezak@suse.cz
+
+- Move the YaST self update step earlier in the workflow to avoid
+  bugs caused by restarting YaST (bsc#985055, bsc#992608,
+  bsc#993690, bsc#993249)
+- 12.2.1
+
+-------------------------------------------------------------------
+Thu Jul 21 11:30:11 UTC 2016 - lslezak@suse.cz
+
+- Remove some files from the inst-sys to have more free RAM on low
+  memory systems (bsc#974601)
+- 12.2.0
+
+-------------------------------------------------------------------
+Tue Jun 14 15:37:12 UTC 2016 - igonzalezsosa@suse.com
+
+- Delay self-update during autoupgrade until software manager
+  is initialized (bsc#984656)
+- 12.0.41
+
+-------------------------------------------------------------------
+Mon Jun 13 08:40:40 UTC 2016 - igonzalezsosa@suse.com
+
+- Add URL to enable self-update feature (FATE#319716)
+- 12.0.40
+
+-------------------------------------------------------------------
+Wed May 25 13:38:58 CEST 2016 - schubi@suse.de
+
+- Added AutoYaST ssh_import support (FATE#319624).
+- 12.0.39
+
+-------------------------------------------------------------------
+Wed May 25 10:15:11 UTC 2016 - igonzalezsosa@suse.com
+
+- Include the Ruby debugger (byebug) in the inst-sys for easier
+  YaST debugging (FATE#318421)
+- 12.0.38
+
+-------------------------------------------------------------------
+Wed May 18 09:31:22 UTC 2016 - ancor@suse.com
+
+- Removed not longer necessary items from copy_to_system section
+- Added SSH keys import section to the installation proposal
+- Fate#319624
+- 12.0.37
+
+-------------------------------------------------------------------
+Tue Apr  5 16:09:21 UTC 2016 - igonzalezsosa@suse.com
+
+- Automatically update the installer in the initial stage of:
+  installation, update, autoinstallation and autoupgrade.
+  Not affected: live_installation. (FATE#319716).
+- 12.0.36
+
+-------------------------------------------------------------------
+Tue Sep 30 10:31:43 UTC 2014 - ancor@suse.com
+
+- Disabled "change hostname via DHCP" by default (bnc#870896)
+- 12.0.35
+
+-------------------------------------------------------------------
+Thu Sep 18 13:17:05 CEST 2014 - locilka@suse.com
+
+- removed firewall_stage1 from AutoYast confirmation (proposal)
+  screen (bnc#894130)
+- 12.0.34
+
+-------------------------------------------------------------------
+Thu Aug 21 09:14:41 UTC 2014 - lslezak@suse.cz
+
+- clone registration settings to autoinst.xml (bnc#892449)
+- 12.0.33
+
+-------------------------------------------------------------------
+Mon Aug  4 16:19:23 CEST 2014 - locilka@suse.com
+
+- Added yast2-firewall to inst-sys dependencies - required for
+  creating the AutoYast profile at the end of installation
+  (bnc#887406)
+- 12.0.32
+
+-------------------------------------------------------------------
+Wed Jun 25 12:02:26 UTC 2014 - jreidinger@suse.com
+
+- return back proposal entry for autoyast clonning (bnc#881108)
+- 12.0.31
+
+-------------------------------------------------------------------
+Mon Jun 23 08:51:54 UTC 2014 - jreidinger@suse.com
+
+- remove non-existing clients from auto-upgrade workflow
+- 12.0.30
+
+-------------------------------------------------------------------
+Thu Jun 12 07:59:24 UTC 2014 - lslezak@suse.cz
+
+- revert the addon removal, make the workflow less confusing
+  (bnc#880507)
+- 12.0.29
+
+-------------------------------------------------------------------
+Tue May 20 08:46:56 UTC 2014 - jreidinger@suse.com
+
+- remove addon client as it is now run from scc client
+- 12.0.28
+
+-------------------------------------------------------------------
+Fri May 16 14:44:46 CEST 2014 - fcrozat@suse.com
+
+- Also explicitly select pattern 'minimal' for
+  installation (bnc#875350)
+- 12.0.27
+
+-------------------------------------------------------------------
+Thu May 15 11:23:21 CEST 2014 - locilka@suse.com
+
+- Added handling for upgrading default desktop using
+  software->upgrade->window_managers (bnc#874116)
+- 12.0.26
+
+-------------------------------------------------------------------
+Fri May  9 11:31:13 UTC 2014 - jsrain@suse.cz
+
+- download release notes for add-ons (bnc#876700)
+- 12.0.25
+
+-------------------------------------------------------------------
+Fri Apr 18 13:49:10 CEST 2014 - locilka@suse.com
+
+- Default product patterns moved to new software->default_patterns
+  (bnc#873923)
+- 12.0.24
+
+-------------------------------------------------------------------
+Wed Apr 16 11:15:59 CEST 2014 - locilka@suse.com
+
+- Product patterns moved from content file to control file
+  (bnc#873849)
+- 12.0.23
+
+-------------------------------------------------------------------
+Fri Apr 11 10:46:08 CEST 2014 - fcrozat@suse.com
+
+- Switch network configuration to auto (bnc#872336)
+- 12.0.22
+
+-------------------------------------------------------------------
+Thu Apr 10 15:32:04 CEST 2014 - locilka@suse.com
+
+- Installation media removed from update proposal (bnc#869657)
+- 12.0.21
+
+-------------------------------------------------------------------
+Tue Apr  8 14:54:36 UTC 2014 - jreidinger@suse.com
+
+- system upgrade: propose new bootloader configuration due to
+  migration to grub2 (bnc#872081)
+- 12.0.20
+
+-------------------------------------------------------------------
+Fri Apr  4 13:00:07 UTC 2014 - jreidinger@suse.com
+
+- system upgrade: don't call obsolete bootloader code for lilo and
+  hdX (bnc#872081)
+- 12.0.19
+
+-------------------------------------------------------------------
+Thu Apr  3 14:40:14 UTC 2014 - jreidinger@suse.com
+
+- setup network for upgrade workflow (bnc#871178)
+- 12.0.18
+
+-------------------------------------------------------------------
+Thu Apr  3 08:44:12 CEST 2014 - locilka@suse.com
+
+- Adapted software upgrade behavior to SLED 12 (bnc#871174)
+- 12.0.17
+
+-------------------------------------------------------------------
+Tue Apr  1 14:41:30 UTC 2014 - lslezak@suse.cz
+
+- fixed product regexp to allow pattern based upgrade from SLED11
+  (bnc#871174)
+- 12.0.16
+
+-------------------------------------------------------------------
+Tue Apr  1 15:23:40 CEST 2014 - locilka@suse.com
+
+- Removed second stage definition for upgrade (bnc#870437)
+- 12.0.15
+
+-------------------------------------------------------------------
+Mon Mar 31 16:42:17 CEST 2014 - fcrozat@suse.com
+
+- GNOME SLE Classic is now classic "sle-classic"
+- 12.0.14
+
+-------------------------------------------------------------------
+Mon Mar 31 13:59:45 UTC 2014 - jreidinger@suse.com
+
+- have complete autoyast2 in inst-sys otherwise cloning in first
+  stage won't work (bnc#869175)
+- 12.0.13
+
+-------------------------------------------------------------------
+Fri Mar 28 10:16:34 CET 2014 - fcrozat@suse.com
+
+- ensure prepare_image is called [FATE#316328]
+- 12.0.12
+
+-------------------------------------------------------------------
+Thu Mar 27 12:42:24 UTC 2014 - fcrozat@suse.com
+
+- enable installation images for SLED [FATE#316328]
+- 12.0.11
+
+-------------------------------------------------------------------
+Wed Mar 26 13:38:27 UTC 2014 - lslezak@suse.cz
+
+- upgrade: removed checkmedia step (moved to boot menu)
+- upgrade: added registration step (bnc#869651)
+- 12.0.10
+
+-------------------------------------------------------------------
+Tue Mar 18 18:14:09 CET 2014 - aschnell@suse.de
+
+- set btrfs_increase_percentage to 300 (bnc#868246)
+- 12.0.9
 
 -------------------------------------------------------------------
 Thu Feb 27 07:11:32 UTC 2014 - mfilka@suse.com
