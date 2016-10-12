@@ -1003,10 +1003,6 @@ Please visit us at http://www.suse.com/.
             <modules config:type="list">
                 <module>
                     <label>Perform Installation</label>
-                    <name>netprobe</name>
-                </module>
-                <module>
-                    <label>Perform Installation</label>
                     <name>autopost</name>
                 </module>
                 <module>
