@@ -1,4 +1,10 @@
 -------------------------------------------------------------------
+Tue Apr  4 12:20:05 UTC 2017 - mvidner@suse.com
+
+- Use SP3 packages for self update, not SP2 (bsc#1032082).
+- 13.3.3
+
+-------------------------------------------------------------------
 Mon Feb  6 14:15:04 UTC 2017 - jreidinger@suse.com
 
 - Drop live installation (FATE#321360)
