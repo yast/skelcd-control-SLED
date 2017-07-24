@@ -84,6 +84,8 @@ Requires:  yast2-reipl
 Requires:  yast2-vm
 %endif
 
+Provides:       system-installation = SLED
+
 #
 ######################################################################
 
