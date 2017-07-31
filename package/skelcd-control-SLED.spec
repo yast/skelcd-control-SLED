@@ -84,12 +84,14 @@ Requires:  yast2-reipl
 Requires:  yast2-vm
 %endif
 
+Provides:       system-installation() = SLED
+
 #
 ######################################################################
 
 Url:            https://github.com/yast/skelcd-control-SLED
 AutoReqProv:    off
-Version:        12.3.4
+Version:        15.0.0
 Release:        0
 BuildRoot:      %{_tmppath}/%{name}-%{version}-build
 Source:         %{name}-%{version}.tar.bz2
@@ -109,10 +111,12 @@ make -C control check
 
 %install
 #
-# Add control file 
+# Add control file
 #
 mkdir -p $RPM_BUILD_ROOT/CD1
 install -m 644 control/control.SLED.xml $RPM_BUILD_ROOT/CD1/control.xml
+
+install -m 644 control/installation.SLED.xml $RPM_BUILD_ROOT/installation.xml
 
 # install LICENSE (required by build service check)
 mkdir -p $RPM_BUILD_ROOT/%{_prefix}/share/doc/packages/%{name}
@@ -121,6 +125,7 @@ install -m 644 LICENSE $RPM_BUILD_ROOT/%{_prefix}/share/doc/packages/%{name}
 %files
 %defattr(644,root,root,755)
 /CD1
+/installation.xml
 %doc %dir %{_prefix}/share/doc/packages/%{name}
 %doc %{_prefix}/share/doc/packages/%{name}/LICENSE
 
