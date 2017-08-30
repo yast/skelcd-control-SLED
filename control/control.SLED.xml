@@ -821,6 +821,9 @@ Please visit us at http://www.suse.com/.
                     <enable_back>no</enable_back>
                     <enable_next>yes</enable_next>
                 </module>
+                <!-- bsc#1047060: Module used only to display a beta warning in case README.BETA
+                file exists. Other than that, the module is completely skipped in autoinstallation
+                mode -->
                 <module>
                     <name>complex_welcome</name>
                     <label>Welcome</label>
