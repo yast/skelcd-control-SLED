@@ -822,6 +822,16 @@ Please visit us at http://www.suse.com/.
                     <enable_next>yes</enable_next>
                 </module>
                 <module>
+                    <name>complex_welcome</name>
+                    <label>Welcome</label>
+                    <enable_back>no</enable_back>
+                    <enable_next>yes</enable_next>
+                    <arguments>
+                        <first_run>yes</first_run>
+                    </arguments>
+                    <retranslate config:type="boolean">true</retranslate>
+                </module>
+                <module>
                     <label>AutoYaST Settings</label>
                     <name>autoinit</name>
                     <archs>all</archs>
