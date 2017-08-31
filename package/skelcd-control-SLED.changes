@@ -1,4 +1,11 @@
 -------------------------------------------------------------------
+Thu Aug 31 12:54:10 UTC 2017 - gsouza@suse.com
+
+- Added complex welcome module to autoupgrade in order to show
+  README.BETA in case it exists. (bsc#1047060)
+- 15.0.3
+
+-------------------------------------------------------------------
 Wed Aug 30 13:11:24 UTC 2017 - gsouza@suse.com
 
 - Added complex welcome module to autoinstallation in order to show
