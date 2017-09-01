@@ -1,8 +1,15 @@
 -------------------------------------------------------------------
-Thu Aug 31 12:54:10 UTC 2017 - gsouza@suse.com
+Fri Sep  1 12:23:36 UTC 2017 - gsouza@suse.com
 
 - Added complex welcome module to autoupgrade in order to show
   README.BETA in case it exists. (bsc#1047060)
+- 15.0.4
+
+-------------------------------------------------------------------
+Fri Sep  1 10:18:45 UTC 2017 - lslezak@suse.cz
+
+- Added yast2-s390 dependency to fix failed disk activation
+  (bsc#1055871)
 - 15.0.3
 
 -------------------------------------------------------------------
