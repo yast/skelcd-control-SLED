@@ -78,6 +78,7 @@ Requires:       rubygem(%{rb_default_ruby_abi}:byebug)
 #
 %ifarch s390 s390x
 Requires:  yast2-reipl
+Requires:  yast2-s390
 %endif
 
 %ifarch %ix86 x86_64
@@ -91,7 +92,7 @@ Provides:       system-installation() = SLED
 
 Url:            https://github.com/yast/skelcd-control-SLED
 AutoReqProv:    off
-Version:        15.0.2
+Version:        15.0.3
 Release:        0
 BuildRoot:      %{_tmppath}/%{name}-%{version}-build
 Source:         %{name}-%{version}.tar.bz2
