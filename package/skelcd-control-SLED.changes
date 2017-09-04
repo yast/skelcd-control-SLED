@@ -1,4 +1,11 @@
 -------------------------------------------------------------------
+Mon Sep  4 15:01:05 UTC 2017 - igonzalezsosa@suse.com
+
+- Initialize libzypp in advance in order to read the product's
+  license (fate#322276)
+- 15.0.5
+
+-------------------------------------------------------------------
 Fri Sep  1 12:23:36 UTC 2017 - gsouza@suse.com
 
 - Added complex welcome module to autoupgrade in order to show
