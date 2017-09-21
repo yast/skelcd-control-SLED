@@ -1,4 +1,12 @@
 -------------------------------------------------------------------
+Thu Sep 21 13:40:47 UTC 2017 - jreidinger@suse.com
+
+- drop obsolete control.xml
+- add optional pattern gnome to work with desktop selection
+  based on update alternatives (bsc#1057538)
+- 15.0.6
+
+-------------------------------------------------------------------
 Mon Sep  4 15:01:05 UTC 2017 - igonzalezsosa@suse.com
 
 - Initialize libzypp in advance in order to read the product's

@@ -8,6 +8,10 @@ textdomain="control"
 
   <textdomain>control</textdomain>
 
+  <software>
+    <optional_default_patterns>gnome-basic</optional_default_patterns>
+  </software>
+
   <partitioning>
       <try_separate_home config:type="boolean">true</try_separate_home>
       <limit_try_home>14GB</limit_try_home>
