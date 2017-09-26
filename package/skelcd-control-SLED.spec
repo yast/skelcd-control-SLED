@@ -114,6 +114,7 @@ make -C control check
 #
 # Add installation.xml file
 #
+mkdir -p $RPM_BUILD_ROOT
 install -m 644 control/installation.SLED.xml $RPM_BUILD_ROOT/installation.xml
 
 # install LICENSE (required by build service check)
