@@ -1,4 +1,12 @@
 -------------------------------------------------------------------
+Mon Oct  2 15:07:41 UTC 2017 - mfilka@suse.com
+
+- fate#323450
+  - moved product specific part of autoinstall workflow into
+    installation.xml
+- 15.0.7
+
+-------------------------------------------------------------------
 Thu Sep 21 13:40:47 UTC 2017 - jreidinger@suse.com
 
 - drop obsolete control.xml
