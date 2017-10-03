@@ -359,22 +359,6 @@ textdomain="control"
             <append_modules config:type="list">
                 <!-- As soon as possible -->
                 <module>
-                    <label>Installer Update</label>
-                    <name>update_installer</name>
-                    <enable_back>no</enable_back>
-                    <enable_next>yes</enable_next>
-                </module>
-                <module>
-                    <label>AutoYaST Settings</label>
-                    <name>autoinit</name>
-                    <archs>all</archs>
-                    <retranslate config:type="boolean">true</retranslate>
-                </module>
-                <module>
-                    <label>AutoYaST Settings</label>
-                    <name>autosetup</name>
-                </module>
-                <module>
                     <label>AutoYaST Settings</label>
                     <name>initial_autoyast_proposal</name>
                     <execute>inst_proposal</execute>
