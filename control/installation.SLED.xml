@@ -9,7 +9,7 @@ textdomain="control"
   <textdomain>control</textdomain>
 
   <software>
-    <optional_default_patterns>gnome-basic</optional_default_patterns>
+    <optional_default_patterns>gnome</optional_default_patterns>
   </software>
 
   <partitioning>
