@@ -1,7 +1,8 @@
 -------------------------------------------------------------------
-Thu Oct  5 9:05:31 UTC 2017 - sflees@suse.de
+Thu Oct 05 23:05:31 UTC 2017 - sflees@suse.de
 
-- SLED should use gnome rather then gnome-basic as its default
+- SLED should use gnome rather then gnome-basic as its default 
+  (fate#323450)
 - 15.0.9
 
 -------------------------------------------------------------------
