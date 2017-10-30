@@ -10,7 +10,7 @@ textdomain="control"
 
   <globals>
     <!-- bsc #1058672: Unset /etc/sysconfig/security/POLKIT_DEFAULT_PRIVS -->
-    <polkit_default_privs/>
+    <polkit_default_privs><![CDATA[]]></polkit_default_privs>
   </globals>
 
   <software>
