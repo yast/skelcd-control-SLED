@@ -1,4 +1,10 @@
 -------------------------------------------------------------------
+Mon Oct 30 12:26:08 UTC 2017 - jreidinger@suse.com
+
+- fix unsetting polkit_default_priv (bsc#1058672)
+- 15.0.10
+
+-------------------------------------------------------------------
 Thu Oct 05 23:05:31 UTC 2017 - sflees@suse.de
 
 - SLED should use gnome rather then gnome-basic as its default 
