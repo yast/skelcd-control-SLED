@@ -7,15 +7,36 @@ textdomain="control"
 -->
 
   <textdomain>control</textdomain>
+  <texts>
+      <roles_caption>
+        <!-- TRANSLATORS: dialog caption -->
+        <label>System Role</label>
+      </roles_caption>
+      <roles_text>
+        <!-- TRANSLATORS: label in a dialog -->
+        <label>System Roles are predefined use cases which tailor the system
+for the selected scenario.</label>
+      </roles_text>
+      <roles_help>
+        <!-- TRANSLATORS: dialog help -->
+        <label>&lt;p&gt;The system roles adjustments are in the range from package selection up
+to disk partitioning. By choosing a system role, the system is
+configured accordingly to match the use case of the role. The settings
+defined by a role can be overridden in the next steps if necessary.&lt;/p&gt;</label>
+      </roles_help>
+      <default_role>
+        <!-- TRANSLATORS: a label for a system role -->
+        <label>Default</label>
+      </default_role>
+      <default_role_description>
+        <label>Default software selection for SUSE Linux Enterprise Desktop.</label>
+      </default_role_description>
+  </texts>
 
   <globals>
     <!-- bsc #1058672: Unset /etc/sysconfig/security/POLKIT_DEFAULT_PRIVS -->
     <polkit_default_privs><![CDATA[]]></polkit_default_privs>
   </globals>
-
-  <software>
-    <optional_default_patterns>gnome</optional_default_patterns>
-  </software>
 
   <partitioning>
       <try_separate_home config:type="boolean">true</try_separate_home>
@@ -125,6 +146,29 @@ textdomain="control"
   </network>
 
   <update>
+    <system_roles>
+      <insert_system_roles config:type="list">
+        <insert_system_role>
+          <system_roles config:type="list">
+            <system_role>
+              <!-- the id is a key for texts/$id/label
+                                   and texts/$id_description/label below -->
+              <id>default_role</id>
+              <!-- nothing is overlaid for the normal role -->
+
+              <order config:type="integer">1000</order>
+              <software>
+                <default_patterns>base</default_patterns>
+                <!-- the cdata trick produces an empty string in the data
+                     instead of omitting the key entirely -->
+                <optional_default_patterns>gnome</optional_default_patterns>
+              </software>
+            </system_role>
+          </system_roles>
+        </insert_system_role>
+      </insert_system_roles>
+    </system_roles>
+
     <workflows config:type="list">
         <workflow>
             <defaults>
@@ -150,7 +194,14 @@ textdomain="control"
                     <enable_next>yes</enable_next>
                 </module>
                 <module>
+                    <label>Apply Modules Extensions</label>
+                    <name>modules_extensions</name>
+                </module>
+                <module>
                     <name>download_release_notes</name>
+                </module>
+                <module>
+                    <name>system_role</name>
                 </module>
                 <module>
                     <label>Disk</label>
