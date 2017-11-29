@@ -1,4 +1,10 @@
 -------------------------------------------------------------------
+Wed Nov 29 09:04:06 UTC 2017 - gsouza@suse.com
+
+- Implement system roles for Desktop product (fate#324198)
+- 15.0.11
+
+-------------------------------------------------------------------
 Mon Oct 30 12:26:08 UTC 2017 - jreidinger@suse.com
 
 - fix unsetting polkit_default_priv (bsc#1058672)
