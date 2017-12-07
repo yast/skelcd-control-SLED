@@ -1,4 +1,10 @@
 -------------------------------------------------------------------
+Thu Dec  7 19:05:01 UTC 2017 - kmroz@suse.com
+
+- /var/lib/ceph as btrfs subvolume with CoW disabled (bsc#1013011)
+- 15.0.12
+
+-------------------------------------------------------------------
 Wed Nov 29 09:04:06 UTC 2017 - gsouza@suse.com
 
 - Implement system roles for Desktop product (fate#324198)
