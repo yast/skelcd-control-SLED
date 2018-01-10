@@ -1,4 +1,11 @@
 -------------------------------------------------------------------
+Tue Dec 12 17:11:12 UTC 2017 - rbrown@suse.com
+
+- adjust subvolume list to have NoCOW /var instead of many 
+  subvolumes (boo#1075369)
+- 15.0.12
+
+-------------------------------------------------------------------
 Wed Nov 29 09:04:06 UTC 2017 - gsouza@suse.com
 
 - Implement system roles for Desktop product (fate#324198)
@@ -13,7 +20,7 @@ Mon Oct 30 12:26:08 UTC 2017 - jreidinger@suse.com
 -------------------------------------------------------------------
 Thu Oct 05 23:05:31 UTC 2017 - sflees@suse.de
 
-- SLED should use gnome rather then gnome-basic as its default 
+- SLED should use gnome rather then gnome-basic as its default
   (fate#323450)
 - 15.0.9
 
@@ -347,7 +354,7 @@ Tue Mar 18 18:14:09 CET 2014 - aschnell@suse.de
 Thu Feb 27 07:11:32 UTC 2014 - mfilka@suse.com
 
 - added reference to linuxrc network configuration client
-- 12.0.8 
+- 12.0.8
 
 -------------------------------------------------------------------
 Thu Feb 20 13:37:03 UTC 2014 - jreidinger@suse.com
@@ -473,7 +480,7 @@ Mon Jan  9 13:39:10 CET 2012 - locilka@suse.cz
 -------------------------------------------------------------------
 Mon Oct 31 09:25:50 CET 2011 - jsuchome@suse.cz
 
-- save ecdsa keys as well (bnc#726468) 
+- save ecdsa keys as well (bnc#726468)
 
 -------------------------------------------------------------------
 Fri Oct  7 11:40:40 UTC 2011 - jsrain@site
@@ -546,8 +553,8 @@ Thu Nov 20 18:43:46 CET 2008 - locilka@suse.cz
 -------------------------------------------------------------------
 Tue Nov 11 13:48:52 CET 2008 - juhliarik@suse.cz
 
-- Chnaged order (summary) of yast modules in Expert tab 
-  (bnc #441434)  
+- Chnaged order (summary) of yast modules in Expert tab
+  (bnc #441434)
 
 -------------------------------------------------------------------
 Mon Oct 27 17:30:37 CET 2008 - locilka@suse.cz
@@ -819,9 +826,9 @@ Tue Apr 27 16:12:42 CEST 2004 - nashif@suse.de
 Fri Apr 16 14:48:40 CEST 2004 - nashif@suse.de
 
 - removed keyboard proposal from update proposal for the update
-  in the running system (bug #37817) 
+  in the running system (bug #37817)
 - add "service" proposal to SLES installation
-- removed remote proposal 
+- removed remote proposal
 
 -------------------------------------------------------------------
 Wed Apr  7 00:39:24 CEST 2004 - nashif@suse.de
@@ -838,14 +845,14 @@ Thu Apr  1 05:20:40 CEST 2004 - nashif@suse.de
 -------------------------------------------------------------------
 Wed Mar 31 19:08:12 CEST 2004 - nashif@suse.de
 
-- disable desktop variable on SLES (use_desktop_scheduler set to 
+- disable desktop variable on SLES (use_desktop_scheduler set to
   false)
 
 -------------------------------------------------------------------
 Thu Mar 25 03:32:53 CET 2004 - nashif@suse.de
 
 - Initial release
-  * dont delete rpms 
+  * dont delete rpms
   * enable evms
   * disable autologin
 
