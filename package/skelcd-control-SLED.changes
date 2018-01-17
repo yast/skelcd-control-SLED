@@ -1,4 +1,10 @@
 -------------------------------------------------------------------
+Wed Jan 17 13:31:47 CET 2018 - snwint@suse.de
+
+- rewrite partitioning section to use new storage-ng settings
+- 15.0.13
+
+-------------------------------------------------------------------
 Tue Dec 12 17:11:12 UTC 2017 - rbrown@suse.com
 
 - adjust subvolume list to have NoCOW /var instead of many 
