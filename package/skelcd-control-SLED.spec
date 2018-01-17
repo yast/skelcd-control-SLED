@@ -63,6 +63,8 @@ Requires:       yast2-network >= 3.1.24
 Requires:       yast2-nfs-client
 Requires:       yast2-ntp-client
 Requires:       yast2-proxy
+# clients/inst_product_upgrade_license.rb
+Requires:       yast2-packager >= 4.0.29
 Requires:       yast2-services-manager
 Requires:       yast2-configuration-management
 Requires:       yast2-slp
@@ -92,7 +94,7 @@ Provides:       system-installation() = SLED
 
 Url:            https://github.com/yast/skelcd-control-SLED
 AutoReqProv:    off
-Version:        15.0.12
+Version:        15.0.13
 Release:        0
 BuildRoot:      %{_tmppath}/%{name}-%{version}-build
 Source:         %{name}-%{version}.tar.bz2
