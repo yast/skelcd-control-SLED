@@ -1,4 +1,10 @@
 -------------------------------------------------------------------
+Fri Feb  9 13:36:22 UTC 2018 - fred@crozat.net
+
+- Remove default system role (bsc#1078954).
+- 15.0.14
+
+-------------------------------------------------------------------
 Wed Jan 17 13:41:38 UTC 2018 - lslezak@suse.cz
 
 - Display the product license at upgrade (just after selecting
