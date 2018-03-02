@@ -1,4 +1,10 @@
 -------------------------------------------------------------------
+Fri Mar  2 11:06:29 CET 2018 - aginies@suse.com
+
+- remove requires on yast2-vm (BSC#1057318)
+- 15.0.16
+
+-------------------------------------------------------------------
 Mon Feb 12 14:45:11 UTC 2018 - jreidinger@suse.com
 
 - do not append same workflow modules for upgrade and autoupgrade

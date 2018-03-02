@@ -83,10 +83,6 @@ Requires:  yast2-reipl
 Requires:  yast2-s390
 %endif
 
-%ifarch %ix86 x86_64
-Requires:  yast2-vm
-%endif
-
 Provides:       system-installation() = SLED
 
 #
@@ -94,7 +90,7 @@ Provides:       system-installation() = SLED
 
 Url:            https://github.com/yast/skelcd-control-SLED
 AutoReqProv:    off
-Version:        15.0.15
+Version:        15.0.16
 Release:        0
 BuildRoot:      %{_tmppath}/%{name}-%{version}-build
 Source:         %{name}-%{version}.tar.bz2
