@@ -33,7 +33,7 @@ License:        MIT
 Group:          Metapackages
 BuildRequires:  libxml2-tools
 # Added software->default_patterns
-BuildRequires:  yast2-installation-control >= 3.1.7
+BuildRequires:  yast2-installation-control >= 4.0.10
 
 ######################################################################
 #
@@ -90,7 +90,7 @@ Provides:       system-installation() = SLED
 
 Url:            https://github.com/yast/skelcd-control-SLED
 AutoReqProv:    off
-Version:        15.0.16
+Version:        15.0.17
 Release:        0
 BuildRoot:      %{_tmppath}/%{name}-%{version}-build
 Source:         %{name}-%{version}.tar.bz2
