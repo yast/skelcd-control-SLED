@@ -33,7 +33,7 @@ License:        MIT
 Group:          Metapackages
 BuildRequires:  libxml2-tools
 # Added software->default_patterns
-BuildRequires:  yast2-installation-control >= 3.1.7
+BuildRequires:  yast2-installation-control >= 4.0.10
 
 ######################################################################
 #
