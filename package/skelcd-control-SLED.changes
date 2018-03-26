@@ -1,4 +1,10 @@
 -------------------------------------------------------------------
+Wed Mar 26 14:32:55 UTC 2018 - rbrown@suse.com
+
+- Create /root subvolume on fresh installs (bsc#1085266)
+- 15.0.18
+
+-------------------------------------------------------------------
 Tue Mar 13 14:28:25 UTC 2018 - igonzalezsosa@suse.com
 
 - Replace root_subvolume_read_only with btrfs_read_only (related
@@ -35,7 +41,7 @@ Wed Jan 17 13:41:38 UTC 2018 - lslezak@suse.cz
 -------------------------------------------------------------------
 Tue Dec 12 17:11:12 UTC 2017 - rbrown@suse.com
 
-- adjust subvolume list to have NoCOW /var instead of many 
+- adjust subvolume list to have NoCOW /var instead of many
   subvolumes (boo#1075369)
 - 15.0.12
 
