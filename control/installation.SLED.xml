@@ -29,15 +29,22 @@ defined by a role can be overridden in the next steps if necessary.&lt;/p&gt;</l
   <globals>
     <!-- bsc #1058672: Unset /etc/sysconfig/security/POLKIT_DEFAULT_PRIVS -->
     <polkit_default_privs><![CDATA[]]></polkit_default_privs>
-  </globals>
 
-  <partitioning>
-      <expert_partitioner_warning config:type="boolean">false</expert_partitioner_warning>
+    <!-- FATE #303875, see /etc/sysconfig/network/dhcp:WRITE_HOSTNAME_TO_HOSTS -->
+    <write_hostname_to_hosts config:type="boolean">true</write_hostname_to_hosts>
+    <!-- bnc#870896, see /etc/sysconfig/network/dhcp:DHCLIENT_SET_HOSTNAME -->
+    <dhclient_set_hostname config:type="boolean">false</dhclient_set_hostname>
 
-      <proposal>
-          <lvm config:type="boolean">false</lvm>
-          <proposal_settings_editable config:type="boolean">true</proposal_settings_editable>
-      </proposal>
+    <ui_mode>simple</ui_mode>
+</globals>
+
+<partitioning>
+    <expert_partitioner_warning config:type="boolean">false</expert_partitioner_warning>
+
+    <proposal>
+        <lvm config:type="boolean">false</lvm>
+        <proposal_settings_editable config:type="boolean">true</proposal_settings_editable>
+    </proposal>
 
       <volumes config:type="list">
           <!-- / volume: 3 GiB - 10 GiB, *4 if snapshots are used -->
