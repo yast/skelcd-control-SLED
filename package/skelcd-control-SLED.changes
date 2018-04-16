@@ -1,4 +1,10 @@
 -------------------------------------------------------------------
+Mon Apr 16 06:42:17 UTC 2018 - jreidinger@suse.com
+
+- Add also explicit enablement of os-prober (bsc#1089516)
+- 15.0.20
+
+-------------------------------------------------------------------
 Mon Apr 16 04:10:11 UTC 2018 - jreidinger@suse.com
 
 - Add missing globals that are different to SLES (bsc#1089516)

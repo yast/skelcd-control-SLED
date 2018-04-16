@@ -30,6 +30,8 @@ defined by a role can be overridden in the next steps if necessary.&lt;/p&gt;</l
     <!-- bsc #1058672: Unset /etc/sysconfig/security/POLKIT_DEFAULT_PRIVS -->
     <polkit_default_privs><![CDATA[]]></polkit_default_privs>
 
+    <!-- explicitly enable os prober (bsc#1089516) -->
+    <disable_os_prober config:type="boolean">false</disable_os_prober>
     <!-- FATE #303875, see /etc/sysconfig/network/dhcp:WRITE_HOSTNAME_TO_HOSTS -->
     <write_hostname_to_hosts config:type="boolean">true</write_hostname_to_hosts>
     <!-- bnc#870896, see /etc/sysconfig/network/dhcp:DHCLIENT_SET_HOSTNAME -->
