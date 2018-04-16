@@ -1,4 +1,10 @@
 -------------------------------------------------------------------
+Mon Apr 16 04:10:11 UTC 2018 - jreidinger@suse.com
+
+- Add missing globals that are different to SLES (bsc#1089516)
+- 15.0.19
+
+-------------------------------------------------------------------
 Wed Mar 26 14:32:55 UTC 2018 - rbrown@suse.com
 
 - Create /root subvolume on fresh installs (bsc#1085266)

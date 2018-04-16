@@ -29,6 +29,13 @@ defined by a role can be overridden in the next steps if necessary.&lt;/p&gt;</l
   <globals>
     <!-- bsc #1058672: Unset /etc/sysconfig/security/POLKIT_DEFAULT_PRIVS -->
     <polkit_default_privs><![CDATA[]]></polkit_default_privs>
+
+    <!-- FATE #303875, see /etc/sysconfig/network/dhcp:WRITE_HOSTNAME_TO_HOSTS -->
+    <write_hostname_to_hosts config:type="boolean">true</write_hostname_to_hosts>
+    <!-- bnc#870896, see /etc/sysconfig/network/dhcp:DHCLIENT_SET_HOSTNAME -->
+    <dhclient_set_hostname config:type="boolean">false</dhclient_set_hostname>
+
+    <ui_mode>simple</ui_mode>
   </globals>
 
   <partitioning>
