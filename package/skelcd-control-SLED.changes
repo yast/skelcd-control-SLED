@@ -1,7 +1,7 @@
 -------------------------------------------------------------------
 Mon Apr 16 04:10:11 UTC 2018 - jreidinger@suse.com
 
-- Add missing globals that is different to SLES (bsc#1089516)
+- Add missing globals that are different to SLES (bsc#1089516)
 - 15.0.19
 
 -------------------------------------------------------------------

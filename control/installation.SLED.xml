@@ -36,15 +36,15 @@ defined by a role can be overridden in the next steps if necessary.&lt;/p&gt;</l
     <dhclient_set_hostname config:type="boolean">false</dhclient_set_hostname>
 
     <ui_mode>simple</ui_mode>
-</globals>
+  </globals>
 
-<partitioning>
-    <expert_partitioner_warning config:type="boolean">false</expert_partitioner_warning>
+  <partitioning>
+      <expert_partitioner_warning config:type="boolean">false</expert_partitioner_warning>
 
-    <proposal>
-        <lvm config:type="boolean">false</lvm>
-        <proposal_settings_editable config:type="boolean">true</proposal_settings_editable>
-    </proposal>
+      <proposal>
+          <lvm config:type="boolean">false</lvm>
+          <proposal_settings_editable config:type="boolean">true</proposal_settings_editable>
+      </proposal>
 
       <volumes config:type="list">
           <!-- / volume: 3 GiB - 10 GiB, *4 if snapshots are used -->
