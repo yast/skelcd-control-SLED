@@ -1,4 +1,11 @@
 -------------------------------------------------------------------
+Mon May 14 10:38:50 UTC 2018 - ancor@suse.com
+
+- On the initial storage proposal, try disabling snapshots if it
+  was not enough to disable home and swap (bsc#1089274).
+- 15.0.21
+
+-------------------------------------------------------------------
 Mon Apr 16 06:42:17 UTC 2018 - jreidinger@suse.com
 
 - Add also explicit enablement of os-prober (bsc#1089516)
