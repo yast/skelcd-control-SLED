@@ -44,7 +44,7 @@ BuildRequires:  yast2-installation-control >= 4.0.10
 # SLES specific Yast packages needed in the inst-sys
 # to provide the functionality needed by this control file
 Requires:       yast2-registration
-Requires:       yast2-theme-SLE
+Requires:       yast2-theme
 
 # Generic Yast packages needed for the installer
 Requires:       autoyast2
@@ -90,7 +90,7 @@ Provides:       system-installation() = SLED
 
 Url:            https://github.com/yast/skelcd-control-SLED
 AutoReqProv:    off
-Version:        15.0.22
+Version:        15.0.23
 Release:        0
 BuildRoot:      %{_tmppath}/%{name}-%{version}-build
 Source:         %{name}-%{version}.tar.bz2
