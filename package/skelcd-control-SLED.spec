@@ -27,13 +27,15 @@
 #
 ######################################################################
 
-Name:           skelcd-control-SLED
+%define         skelcd_name SLED
+
+Name:           skelcd-control-%{skelcd_name}
 Summary:        SLED control file needed for installation
 License:        MIT
 Group:          Metapackages
 BuildRequires:  libxml2-tools
-# Added software->default_patterns
-BuildRequires:  yast2-installation-control >= 4.0.10
+# Added skelcd macros
+BuildRequires:  yast2-installation-control >= 4.1.5
 
 ######################################################################
 #
@@ -47,6 +49,7 @@ Requires:       yast2-registration
 Requires:       yast2-theme
 
 # Generic Yast packages needed for the installer
+Requires:       yast2 >= 4.1.41
 Requires:       autoyast2
 Requires:       yast2-add-on
 Requires:       yast2-buildtools
@@ -112,8 +115,8 @@ make -C control check
 #
 # Add installation.xml file
 #
-mkdir -p $RPM_BUILD_ROOT
-install -m 644 control/installation.SLED.xml $RPM_BUILD_ROOT/installation.xml
+mkdir -p $RPM_BUILD_ROOT/%{skelcd_control_datadir}
+install -m 644 control/installation.SLED.xml $RPM_BUILD_ROOT/%{skelcd_control_datadir}/%{skelcd_name}.xml
 
 # install LICENSE (required by build service check)
 mkdir -p $RPM_BUILD_ROOT/%{_prefix}/share/doc/packages/%{name}
@@ -121,7 +124,7 @@ install -m 644 LICENSE $RPM_BUILD_ROOT/%{_prefix}/share/doc/packages/%{name}
 
 %files
 %defattr(644,root,root,755)
-/installation.xml
+%{skelcd_control_datadir}
 %doc %dir %{_prefix}/share/doc/packages/%{name}
 %doc %{_prefix}/share/doc/packages/%{name}/LICENSE
 
