@@ -34,8 +34,8 @@ Summary:        SLED control file needed for installation
 License:        MIT
 Group:          Metapackages
 BuildRequires:  libxml2-tools
-# Added skelcd macros
-BuildRequires:  yast2-installation-control >= 4.1.5
+# Added software/default_modules
+BuildRequires:  yast2-installation-control >= 4.2.9
 
 ######################################################################
 #
@@ -93,7 +93,7 @@ Provides:       system-installation() = SLED
 
 Url:            https://github.com/yast/skelcd-control-SLED
 AutoReqProv:    off
-Version:        15.2.1
+Version:        15.2.2
 Release:        0
 BuildRoot:      %{_tmppath}/%{name}-%{version}-build
 Source:         %{name}-%{version}.tar.bz2
