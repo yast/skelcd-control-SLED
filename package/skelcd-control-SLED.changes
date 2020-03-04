@@ -1,4 +1,11 @@
 -------------------------------------------------------------------
+Wed Mar  4 08:41:39 UTC 2020 - Ladislav Slezák <lslezak@suse.cz>
+
+- Do not preselect the "Web and Scripting" module in offline
+  installation (bsc#1165634)
+- 15.2.3
+
+-------------------------------------------------------------------
 Tue Feb 25 11:29:57 UTC 2020 - Ladislav Slezák <lslezak@suse.cz>
 
 - Added default preselected modules in offline installation
