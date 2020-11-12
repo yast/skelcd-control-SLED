@@ -48,6 +48,9 @@ defined by a role can be overridden in the next steps if necessary.&lt;/p&gt;</l
     <dhclient_set_hostname config:type="boolean">false</dhclient_set_hostname>
 
     <ui_mode>simple</ui_mode>
+
+    <!-- Propose hibernation on desktop jsc#SLE-12280-->
+    <propose_hibernation config:type="boolean">true</propose_hibernation>
   </globals>
 
   <partitioning>
