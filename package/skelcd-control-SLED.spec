@@ -36,7 +36,8 @@ Group:          Metapackages
 BuildRequires:  libxml2-tools
 # Added software/default_modules
 BuildRequires:  yast2-installation-control >= 4.2.9
-BuildRequires:  sle15-desktop-migration
+# To migrate old KDE desktop
+Requires:  sle15-desktop-migration
 
 ######################################################################
 #
@@ -94,7 +95,7 @@ Provides:       system-installation() = SLED
 
 Url:            https://github.com/yast/skelcd-control-SLED
 AutoReqProv:    off
-Version:        15.3.3
+Version:        15.3.4
 Release:        0
 BuildRoot:      %{_tmppath}/%{name}-%{version}-build
 Source:         %{name}-%{version}.tar.bz2
