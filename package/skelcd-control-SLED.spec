@@ -95,7 +95,7 @@ Provides:       system-installation() = SLED
 
 Url:            https://github.com/yast/skelcd-control-SLED
 AutoReqProv:    off
-Version:        15.3.4
+Version:        15.4.0
 Release:        0
 BuildRoot:      %{_tmppath}/%{name}-%{version}-build
 Source:         %{name}-%{version}.tar.bz2
