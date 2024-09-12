@@ -1,7 +1,7 @@
 #
-# spec file for package skelcd-control-SLED
+# spec file
 #
-# Copyright (c) 2014 SUSE LINUX Products GmbH, Nuernberg, Germany.
+# Copyright (c) 2023 SUSE LLC
 #
 # All modifications and additions to the file contributed by third parties
 # remain the property of their copyright owners, unless otherwise agreed
@@ -12,7 +12,7 @@
 # license that conforms to the Open Source Definition (Version 1.9)
 # published by the Open Source Initiative.
 
-# Please submit bugfixes or comments via http://bugs.opensuse.org/
+# Please submit bugfixes or comments via https://bugs.opensuse.org/
 #
 
 
@@ -37,7 +37,7 @@ BuildRequires:  libxml2-tools
 # Added software/default_modules
 BuildRequires:  yast2-installation-control >= 4.2.9
 # To migrate old KDE desktop
-Requires:  sle15-desktop-migration
+Requires:       sle15-desktop-migration
 
 ######################################################################
 #
@@ -70,8 +70,8 @@ Requires:       yast2-ntp-client
 Requires:       yast2-proxy
 # clients/inst_product_upgrade_license.rb
 Requires:       yast2-packager >= 4.0.29
-Requires:       yast2-services-manager
 Requires:       yast2-configuration-management
+Requires:       yast2-services-manager
 Requires:       yast2-slp
 Requires:       yast2-trans-stats
 Requires:       yast2-tune
@@ -84,8 +84,8 @@ Requires:       rubygem(%{rb_default_ruby_abi}:byebug)
 # Architecture specific packages
 #
 %ifarch s390 s390x
-Requires:  yast2-reipl
-Requires:  yast2-s390
+Requires:       yast2-reipl
+Requires:       yast2-s390
 %endif
 
 Provides:       system-installation() = SLED
@@ -93,7 +93,7 @@ Provides:       system-installation() = SLED
 #
 ######################################################################
 
-Url:            https://github.com/yast/skelcd-control-SLED
+URL:            https://github.com/yast/skelcd-control-SLED
 AutoReqProv:    off
 Version:        15.6.0
 Release:        0
